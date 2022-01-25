@@ -1,52 +1,53 @@
- " more info https://dougblack.io/words/a-good-vimrc.html                                                                                                 
-  2 " sheatcheet http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
-  3 
-  4 " NOTES:
-  5 " =====
-  6 " CTRL + n = auto complition
-  7 " :term(inal) = open terminal (close terminal, type in the terminal 'exit")
-  7 
-  8 set fileencoding=utf-8
-  9 set number
- 10 set nocompatible
- 11 set tabstop=4           " number of visual spaces per TAB
- 12 set softtabstop=4       " number of spaces in tab when editing
- 13 set expandtab           " tabs are spaces
- 14 set cursorline          " highlight current line
- 15 syntax enable           " enable syntax processing
- 16 set wrap                " wrap lines 
- 17 
- 18 filetype indent on      " load filetype-specific indent files
- 19 
- 20 set mousehide           " hide mouse after typeing 
- 21 set nohlsearch
- 22 set showcmd             " show command in bottom bar
- 23 
- 24 set showmatch           " hightlight matching [{()}]
- 25 set incsearch           " search as characters are entered
- 26 set hlsearch            " highlight matches
- 27 " Ignore case when searching
- 28 set ignorecase          " Ignore case when searching
- 29 set foldenable          " enable folding
- 30 set foldnestmax=10      " 10 nested fold max
- 31 nnoremap <space> za     " space open/closes folds
- 32 set foldmethod=indent   " fold based on indent level
- 33 nnoremap gV `[v`]       " highlight last inserted text
- 34 
- 35 set wildmenu            " visual autocomplete for command menu
- 36 set lazyredraw          " redraw only when we need to.
- 37
- 38 " enable all Python syntax highlighting features
- 39 let python_highlight_all = 1
- 40 
- 41 " Smart way to move between windows
- 42 map <C-j> <C-W>j
- 43 map <C-k> <C-W>k
- 44 map <C-h> <C-W>h
- 45 map <C-l> <C-W>l
- 46 
- 47 " Always show the status line
- 48 set laststatus=2
- 49 
- 50 " Format the status line
- 51 " set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+" more info https://dougblack.io/words/a-good-vimrc.html
+" sheatcheet http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
+
+" NOTES:
+" =====
+" CTRL + n              = auto complition
+" :term(inal)           = open terminal (close terminal, type in the terminal 'exit")
+" CTRL-W CTRL-W         = move focus to the next window (ex. switch between terminal and vim windows
+set fileencoding=utf-8
+set number
+set nocompatible
+set tabstop=4           " number of visual spaces per TAB
+set softtabstop=4       " number of spaces in tab when editing
+set expandtab           " tabs are spaces
+set cursorline          " highlight current line
+syntax enable           " enable syntax processing
+set wrap                " wrap lines 
+
+filetype on
+filetype indent on      " load filetype-specific indent files
+
+set mousehide               " hide mouse after typeing 
+set nohlsearch
+set showcmd                 " show command in bottom bar
+
+set showmatch               " hightlight matching [{()}]
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+" Ignore case when searching
+set ignorecase          " Ignore case when searching
+set foldenable          " enable folding
+set foldnestmax=10      " 10 nested fold max
+nnoremap <space> za         " space open/closes folds
+set foldmethod=indent   " fold based on indent level
+nnoremap gV `[v`]           " highlight last inserted text
+
+set wildmenu            " visual autocomplete for command menu
+set lazyredraw          " redraw only when we need to.
+
+" enable all Python syntax highlighting features
+let python_highlight_all = 1
+
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Always show the status line
+set laststatus=2
+
+" Format the status line
+" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
