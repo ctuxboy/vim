@@ -13,6 +13,7 @@
 " :bX                       = show buffer X
 " :bd or :bdX               = close current buffer or buffer delete X, works also for closing the Explorer
 " :b <space> <tab>          = shows all buffers
+" :!python3 %               = run python3 current script/current buffer (you can replace % with a filename
 
 set fileencoding=utf-8
 set number
@@ -60,7 +61,5 @@ set laststatus=2
 
 " Format the status line
 " set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
-
-" map py :!python3 %     " :py => execute python3 current file
 
 set wildchar=<Tab>
