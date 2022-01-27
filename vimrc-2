@@ -18,8 +18,8 @@
 set fileencoding=utf-8
 set number
 set nocompatible
-set tabstop=4           " number of visual spaces per TAB
-set softtabstop=4       " number of spaces in tab when editing
+" set tabstop=4         " number of visual spaces per TAB
+" set softtabstop=4     " number of spaces in tab when editing
 set expandtab           " tabs are spaces
 set cursorline          " highlight current line
 syntax enable           " enable syntax processing
@@ -27,6 +27,9 @@ set wrap                " wrap lines
 
 filetype on
 filetype indent on      " load filetype-specific indent files
+
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
 set mousehide               " hide mouse after typeing 
 set nohlsearch
@@ -56,10 +59,25 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" STATUSLINE/STATUSBAR
 " Always show the status line
 set laststatus=2
 
 " Format the status line
-" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+set statusline=\ %F%m%r%h\ %w\ \ FileType:\ %y\ \ CWD:\ %r%{getcwd()}%h\ %=Line:\ %l\/%L\ \ Column:\ %c\ 
 
 set wildchar=<Tab>
+
+" Press [F9] = save current buffer and execute Python3 script
+autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+
+" ABBREVIATIONS
+iabbrev @@ c.hollebeke@gmail.com
+
+" HTML abbreviations
+autocmd FileType html :iabbrev html5 <html><CR><head><CR><title></title><CR></head><CR><body><CR></body><CR></html>
+
+"Python abbreviations 
+autocmd Filetype python :iabbrev print print("");<left><left><left>
+autocmd FileType python :iabbrev ifmain if __name__ == '__main__':
