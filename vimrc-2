@@ -12,8 +12,15 @@
 " :ls                       = list buffers
 " :bX                       = show buffer X
 " :bd or :bdX               = close current buffer or buffer delete X, works also for closing the Explorer
+" :find *.py <tab>          = search all py-files also in subfolders
 " :b <space> <tab>          = shows all buffers
 " :!python3 %               = run python3 current script/current buffer (you can replace % with a filename
+" when open the :Ex(plorer), select a file and type 'v' for open file to the right
+
+" Explorer settings
+let g:netrw_browse_split=4  " open in prior window
+let g:netrw_altv=1          " open splits to the right
+let g:netrw_liststyle=3     " Explorer Tree view
 
 set fileencoding=utf-8
 set number
@@ -46,7 +53,8 @@ nnoremap <space> za         " space open/closes folds
 set foldmethod=indent   " fold based on indent level
 nnoremap gV `[v`]           " highlight last inserted text
 
-set wildmenu            " visual autocomplete for command menu
+set path+=**            " Search also in subfolders
+set wildmenu            " Tab completion
 set wildmode=full
 set lazyredraw          " redraw only when we need to.
 
