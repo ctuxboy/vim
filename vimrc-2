@@ -6,7 +6,7 @@
 " CTRL + n                  = auto complition
 " :term(inal)               = open terminal (close terminal, type in the terminal 'exit")
 " CTRL-W CTRL-W             = move focus to the next window (ex. switch between terminal and vim windows
-" :e <space> CTRL + d       = File explorer, show files and dirs in current directory
+" :e <space> <TAB>          = File explorer, show files and dirs in current directory
 " :Explore/:Sex/:Vex/:Tex   = File explorer (S/V/T are short for Split/Vertical/Tab)
 " :q                        = close current window
 " :ls                       = list buffers
@@ -87,5 +87,5 @@ iabbrev @@ c.hollebeke@gmail.com
 autocmd FileType html :iabbrev html5 <html><CR><head><CR><title></title><CR></head><CR><body><CR></body><CR></html>
 
 "Python abbreviations 
-autocmd Filetype python :iabbrev print print("");<left><left><left>
+autocmd Filetype python :iabbrev print print( ' ' )<left><left><left>
 autocmd FileType python :iabbrev ifmain if __name__ == '__main__':
