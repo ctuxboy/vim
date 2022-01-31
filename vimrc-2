@@ -16,6 +16,7 @@
 " :b <space> <tab>          = shows all buffers
 " :!python3 %               = run python3 current script/current buffer (you can replace % with a filename
 " when open the :Ex(plorer), select a file and type 'v' for open file to the right
+" :30Vex                    = open Explorer in vertical split with 30 characters (also use ':30vsplit')
 
 " Explorer settings
 let g:netrw_browse_split=4  " open in prior window
@@ -87,5 +88,5 @@ iabbrev @@ c.hollebeke@gmail.com
 autocmd FileType html :iabbrev html5 <html><CR><head><CR><title></title><CR></head><CR><body><CR></body><CR></html>
 
 "Python abbreviations 
-autocmd Filetype python :iabbrev print print( ' ' )<left><left><left>
+autocmd Filetype python :iabbrev print print(  )<left><left><left>
 autocmd FileType python :iabbrev ifmain if __name__ == '__main__':
