@@ -21,6 +21,8 @@
 " :!python3 %               = run python3 current script/current buffer (you can replace % with a filename
 " when open the :Ex(plorer), select a file and type 'v' for open file to the right
 " :30Vex                    = open Explorer in vertical split with 30 characters (also use ':30vsplit')
+" :gg=G                     = re-indent file (Python)
+" :ggVG                     = Select All (CTRL+A)
 
 " Linenumbers
 set number
