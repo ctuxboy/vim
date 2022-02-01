@@ -59,6 +59,7 @@ set nohlsearch
 set showmatch               " hightlight matching [{()}]
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
+
 " Ignore case when searching
 set ignorecase          " Ignore case when searching
 set foldenable          " enable folding
