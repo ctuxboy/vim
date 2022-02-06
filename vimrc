@@ -1,3 +1,4 @@
+""""""""""""""""" VIMRC VERSION 1.0.0 """""""""""""""""
 " more info https://dougblack.io/words/a-good-vimrc.html
 " sheatcheet http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
 
@@ -34,6 +35,8 @@ set history=500
 let g:netrw_browse_split=4  " open in prior window
 let g:netrw_altv=1          " open splits to the right
 let g:netrw_liststyle=3     " Explorer Tree view
+let g:netrw_keepdir = 0
+let g:netrw_winsize = 30    " Size explorer = 30
 
 set fileencoding=utf-8
 
@@ -130,7 +133,7 @@ iabbrev @@ c.hollebeke@gmail.com
 autocmd FileType html :iabbrev html5 <html><CR><head><CR><title></title><CR></head><CR><body><CR></body><CR></html>
 
 "Python abbreviations 
-autocmd Filetype python :iabbrev print print(  )<left><left><left>
+autocmd Filetype python :iabbrev print print( )<left><left><left>
 autocmd FileType python :iabbrev ifmain if __name__ == '__main__':
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -172,4 +175,4 @@ set ffs=unix,dos,mac
 " Turn backup off, since most stuff is in SVN, git etc. anyway...
 " set nobackup
 " set nowb
-" set noswapfile
+set noswapfile
