@@ -1,4 +1,4 @@
-""""""""""""""""" VIMRC VERSION 1.0.0 """""""""""""""""
+""""""""""""""""" VIMRC VERSION 1.1.0 """""""""""""""""
 " more info https://dougblack.io/words/a-good-vimrc.html
 " sheatcheet http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
 
@@ -130,7 +130,7 @@ autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellesca
 iabbrev @@ c.hollebeke@gmail.com
 
 " HTML abbreviations
-autocmd FileType html :iabbrev html5 <html><CR><head><CR><title></title><CR></head><CR><body><CR></body><CR></html>
+autocmd FileType html :iabbrev html5 <!doctype html><CR><html lang="nl"><CR><head><CR><TAB><meta charset="utf-8"><CR><meta name="viewport" content="width=device-width, initial-scale=1"><CR><title>A Basic HTML5 Template</title><CR><meta name="description" content="A simple HTML5 Template for new projects."><CR><meta name="author" content="Christophe Hollebeke"><CR><meta property="og:title" content="A Basic HTML5 Template"><CR><meta property="og:type" content="website"><CR><meta property="og:url" content="https://www.website.com/"><CR><meta property="og:description" content="A simple HTML5 Template for new projects."><CR><meta property="og:image" content="image.png"><CR><link rel="icon" href="/favicon.ico"><CR><link rel="icon" href="/favicon.svg" type="image/svg+xml"><CR><link rel="apple-touch-icon" href="/apple-touch-icon.png"><CR><link rel="stylesheet" href="css/styles.css?v=1.0"><CR><BACKSPACE></head><CR><body><CR><TAB><!-- your content here... --><CR><BACKSPACE><script src="js/scripts.js"></script><CR></body><CR></html>
 
 "Python abbreviations 
 autocmd Filetype python :iabbrev print print( )<left><left><left>
