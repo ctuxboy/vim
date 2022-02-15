@@ -1,4 +1,4 @@
-""""""""""""""""" VIMRC VERSION 1.1.0 """""""""""""""""
+""""""""""""""""" VIMRC VERSION 1.1.1 """""""""""""""""
 " more info https://dougblack.io/words/a-good-vimrc.html
 " sheatcheet http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
 
