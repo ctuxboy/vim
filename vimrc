@@ -1,4 +1,4 @@
-""""""""""""""""" VIMRC VERSION 1.1.1 """""""""""""""""
+""""""""""""""""" VIMRC VERSION 1.2.0 """""""""""""""""
 " more info https://dougblack.io/words/a-good-vimrc.html
 " sheatcheet http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
 
@@ -30,6 +30,9 @@ set number
 
 " Sets how many lines of history VIM has to remember
 set history=500
+
+" Use system clipboard
+set clipboard=unnamedplus
 
 " Explorer settings
 let g:netrw_browse_split=4  " open in prior window
