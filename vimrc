@@ -1,4 +1,4 @@
-""""""""""""""""" VIMRC VERSION 1.2.0 """""""""""""""""
+""""""""""""""""" VIMRC VERSION 1.3.0 """""""""""""""""
 " more info https://dougblack.io/words/a-good-vimrc.html
 " sheatcheet http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
 
@@ -90,6 +90,10 @@ let python_highlight_all = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Tab navigation
+nnoremap H gT   " go left
+nnoremap L gt   " go right
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
