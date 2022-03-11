@@ -1,4 +1,4 @@
-""""""""""""""""" VIMRC VERSION 1.4.0 """""""""""""""""
+""""""""""""""""" VIMRC VERSION 1.4.1 """""""""""""""""
 " more info https://dougblack.io/words/a-good-vimrc.html
 " sheatcheet http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
 
@@ -74,10 +74,12 @@ set hlsearch            " highlight matches
 
 " Ignore case when searching
 set ignorecase          " Ignore case when searching
-set foldenable          " enable folding
-set foldnestmax=10      " 10 nested fold max
-nnoremap <space> za         " space open/closes folds
-set foldmethod=indent   " fold based on indent level
+
+" set foldenable          " enable folding
+" set foldnestmax=10      " 10 nested fold max
+" nnoremap <space> za         " space open/closes folds
+" set foldmethod=indent   " fold based on indent level
+
 nnoremap gV `[v`]           " highlight last inserted text
 
 set path+=**            " Search also in subfolders
