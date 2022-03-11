@@ -1,4 +1,4 @@
-""""""""""""""""" VIMRC VERSION 1.4.1 """""""""""""""""
+""""""""""""""""" VIMRC VERSION 1.5.0 """""""""""""""""
 " more info https://dougblack.io/words/a-good-vimrc.html
 " sheatcheet http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
 
@@ -62,6 +62,7 @@ filetype on
 filetype indent on
 
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
 " hide mouse after typeing
