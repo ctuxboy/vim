@@ -1,4 +1,4 @@
-""""""""""""""""" VIMRC VERSION 1.3.0 """""""""""""""""
+""""""""""""""""" VIMRC VERSION 1.4.0 """""""""""""""""
 " more info https://dougblack.io/words/a-good-vimrc.html
 " sheatcheet http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
 
@@ -24,6 +24,10 @@
 " :30Vex                    = open Explorer in vertical split with 30 characters (also use ':30vsplit')
 " :gg=G                     = re-indent file (Python)
 " :ggVG                     = Select All (CTRL+A)
+" CTRL+B / CTRL+F           = Page Up / Page Down                                                                                                                                             
+
+nnoremap <C-t>     :tabnew<CR>
+
 
 " Linenumbers
 set number
