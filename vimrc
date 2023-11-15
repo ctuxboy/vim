@@ -10,6 +10,7 @@
 " =====
 " CTRL + n                  = auto complition
 " :term(inal)               = open terminal (close terminal, type in the terminal 'exit")
+" :bo term                  = open terminal below split screen(s)
 " CTRL-W CTRL-W             = move focus to the next window (ex. switch between terminal and vim windows
 " :e <space> <TAB>          = File explorer, show files and dirs in current directory
 " :Explore/:Sex/:Vex/:Tex   = File explorer (S/V/T are short for Split/Vertical/Tab)
@@ -25,6 +26,9 @@
 " :gg=G                     = re-indent file (Python)
 " :ggVG                     = Select All (CTRL+A)
 " CTRL+B / CTRL+F           = Page Up / Page Down                                                                                                                                             
+
+" bterm = open terminal below all splits                                                                       
+cabbrev bterm bo term
 
 nnoremap <C-t>     :tabnew<CR>
 
