@@ -11,6 +11,9 @@
 " CTRL + n                  = auto complition
 " :term(inal)               = open terminal (close terminal, type in the terminal 'exit")
 " :bo term                  = open terminal below split screen(s)
+" :vert term                = open terminal in vertical split
+" :ciw                      = Change Inner Word
+" :diw                      = Delete Inner Word
 " CTRL-W CTRL-W             = move focus to the next window (ex. switch between terminal and vim windows
 " :e <space> <TAB>          = File explorer, show files and dirs in current directory
 " :Explore/:Sex/:Vex/:Tex   = File explorer (S/V/T are short for Split/Vertical/Tab)
