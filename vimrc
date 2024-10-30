@@ -29,7 +29,8 @@
 " :30Vex                    = open Explorer in vertical split with 30 characters (also use ':30vsplit')
 " :gg=G                     = re-indent file (Python)
 " :ggVG                     = Select All (CTRL+A)
-" CTRL+B / CTRL+F           = Page Up / Page Down                                                                                                                                             
+" CTRL+B / CTRL+F           = Page Up / Page Down
+" :resize 50 / :res 50	 = Change the current window split
 
 " bterm = open terminal below all splits                                                                       
 cabbrev bterm bo term
