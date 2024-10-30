@@ -1,4 +1,5 @@
 """"""""""""""""" VIMRC VERSION 1.5.0 """""""""""""""""
+" https://github.com/ctuxboy/vim/blob/main/vimrc
 " more info https://dougblack.io/words/a-good-vimrc.html
 " sheatcheet http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
 
